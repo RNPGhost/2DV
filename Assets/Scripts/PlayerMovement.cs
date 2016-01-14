@@ -17,8 +17,6 @@ public class PlayerMovement : MonoBehaviour {
 	private float yRotation;
 	private Vector3 groundNormal = new Vector3(0f, 1f, 0f);
 	private Vector3 contactNormal; // contactNormal must always have a positive y value
-    private ArrayList newCollisions = new ArrayList();
-	private ArrayList exitedObjects = new ArrayList();
 	private ArrayList collisions = new ArrayList();
 	private bool contactsChanged = false;
 
@@ -40,14 +38,14 @@ public class PlayerMovement : MonoBehaviour {
 	}
 
     // Update is called every frame
-	private void Update()
+    public void Update()
 	{
         mouseLook.LookRotation(transform, cam.transform);
         jump = Input.GetButton("Jump");
 	}
 
     // FixedUpdate is called every physics update
-	private void FixedUpdate()
+    public void FixedUpdate()
 	{
 		if (gameController.Paused) 
 		{ 
@@ -57,7 +55,7 @@ public class PlayerMovement : MonoBehaviour {
 
 		if (contactsChanged)
 		{
-			UpdateContacts();
+			UpdateContactNormal();
 		}
 
 		Vector2 input = GetInput();
@@ -108,53 +106,31 @@ public class PlayerMovement : MonoBehaviour {
         };
     }
 
-	private void UpdateContacts()
+	private void UpdateContactNormal()
 	{
-		// Add any new collisions detected to the list of collisions
-		ArrayList copyOfNewCollisions = new ArrayList(newCollisions);
-
-		foreach (Collision collision in copyOfNewCollisions)
-		{
-			collisions.Add(collision);
-			newCollisions.Remove(collision);
-		}
-
-		// Remove any collisions with objects that have been exited
-		ArrayList copyOfExitedObjects = new ArrayList(exitedObjects);
-		ArrayList copyOfCollisions = new ArrayList(collisions);
-
-        foreach (GameObject gameObject in copyOfExitedObjects)
-		{
-			foreach (Collision collision in copyOfCollisions)
-			{
-				if (collision.gameObject == gameObject)
-				{
-					collisions.Remove(collision);
-				}
-			}
-			exitedObjects.Remove(gameObject);
-		}
-
 		// Calculate new contact normal
 		Vector3 newContactNormal = Vector3.zero;
 		bool onMESurface = false;
 
-		foreach (Collision collision in collisions)
-		{
-            Vector3 collisionNormal = Vector3.zero;
-            foreach (ContactPoint contact in collision.contacts)
-			{
-                collisionNormal += contact.normal;
-			}
-		    
-            if (collisionNormal != Vector3.zero && Vector3.Angle(collisionNormal, groundNormal) < 90.1f)
+        lock (collisions.SyncRoot)
+        {
+            foreach (Collision collision in collisions)
             {
-                newContactNormal += collisionNormal.normalized;
-                onMESurface = true;
+                Vector3 collisionNormal = Vector3.zero;
+                foreach (ContactPoint contact in collision.contacts)
+                {
+                    collisionNormal += contact.normal;
+                }
+
+                if (collisionNormal != Vector3.zero && Vector3.Angle(collisionNormal, groundNormal) < 90.1f)
+                {
+                    newContactNormal += collisionNormal.normalized;
+                    onMESurface = true;
+                }
             }
         }
 
-		onMoveEnabledSurface = onMESurface;
+        onMoveEnabledSurface = onMESurface;
 
 		if (onMESurface)
 		{
@@ -164,16 +140,38 @@ public class PlayerMovement : MonoBehaviour {
 		contactsChanged = false;
 	}
 
-	private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
 	{
-		jumpStartupTimer = 0;
-		newCollisions.Add(collision);
-		contactsChanged = true;
-	}
+	    lock (collisions.SyncRoot)
+	    {
+            collisions.Add(collision);
+        }
 
-	private void OnCollisionExit(Collision collision)
+        jumpStartupTimer = 0;
+        contactsChanged = true;
+    }
+
+    public void OnCollisionExit(Collision collision)
 	{
-		exitedObjects.Add(collision.gameObject);
-		contactsChanged = true;
-	}
+        lock (collisions.SyncRoot)
+        {
+            Debug.Log(collisions.Count);
+            ArrayList collisionsToRemove = new ArrayList();
+            foreach (Collision c in collisions)
+            {
+                if (c.gameObject == collision.gameObject)
+                {
+                    collisionsToRemove.Add(c);
+                }
+            }
+            foreach (Collision r in collisionsToRemove)
+            {
+                collisions.Remove(r);
+            }
+            collisionsToRemove.Clear();
+            Debug.Log(collisions.Count);
+        }
+
+        contactsChanged = true;
+    }
 }

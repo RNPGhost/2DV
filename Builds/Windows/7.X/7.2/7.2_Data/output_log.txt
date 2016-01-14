@@ -19,11 +19,262 @@ Loading F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\
 Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
 Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.206 seconds
+- Completed reload, in  0.210 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 / HD 7900 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3054 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.057 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
 Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 19a8 -> priority: 1 
+  Thread -> id: 20f4 -> priority: 1 
+<RI> Initialized touch support.
+Platform assembly: F:\Documents\Unity Projects\2DV\Builds\Windows\7.X\7.2\7.2_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1340 -> priority: 1 
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+InvalidOperationException: List has changed.
+  at System.Collections.ArrayList+SimpleEnumerator.MoveNext () [0x00000] in <filename unknown>:0 
+  at PlayerMovement.OnCollisionExit (UnityEngine.Collision collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
